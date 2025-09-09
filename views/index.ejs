@@ -1,0 +1,388 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masters Program Search - International Funding</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 Masters Program Search</h1>
+            <p>Find funded graduate programs for international students worldwide</p>
+        </div>
+
+        <div class="mode-toggle">
+            <button id="modeToggle" class="toggle-btn">Switch to Advanced Mode (AI-Powered)</button>
+        </div>
+
+        <form id="searchForm" class="search-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="USA">United States</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="France">France</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course/Field</label>
+                    <input type="text" id="course" name="course" placeholder="e.g., Computer Science" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="level">Level of Study</label>
+                    <select id="level" name="level" required>
+                        <option value="">Select Level</option>
+                        <option value="Masters">Masters</option>
+                        <option value="PhD">PhD</option>
+                        <option value="Post-Doc">Post-Doctorate</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="session">Academic Session</label>
+                    <select id="session" name="session" required>
+                        <option value="">Select Session</option>
+                        <option value="Fall 2024">Fall 2024</option>
+                        <option value="Spring 2025">Spring 2025</option>
+                        <option value="Fall 2025">Fall 2025</option>
+                        <option value="Spring 2026">Spring 2026</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="advancedOptions" class="advanced-options">
+                <h3 style="margin-bottom: 20px;">🤖 AI-Enhanced Search Options</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="minFunding">Minimum Funding Amount</label>
+                        <input type="text" id="minFunding" name="minFunding" placeholder="e.g., $15,000">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferredFunding">Preferred Funding Type</label>
+                        <select id="preferredFunding" name="preferredFunding">
+                            <option value="">Any Type</option>
+                            <option value="Teaching Assistantship">Teaching Assistantship</option>
+                            <option value="Research Assistantship">Research Assistantship</option>
+                            <option value="Graduate Assistantship">Graduate Assistantship</option>
+                            <option value="Merit Scholarship">Merit Scholarship</option>
+                            <option value="Need-based Bursary">Need-based Bursary</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialRequirements">Special Requirements</label>
+                        <input type="text" id="specialRequirements" name="specialRequirements" placeholder="e.g., no GRE required">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="search-btn">🔍 Search Programs</button>
+        </form>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Searching for programs... Please wait</p>
+        </div>
+
+        <div id="results" class="results"></div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarBridge from Suntrenia - Find Your Masters Program</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🎓</div>
+                    <div>
+                        <h1>ScholarBridge</h1>
+                        <p>by Suntrenia</p>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="#"><i class="fas fa-home"></i> Home</a>
+                    <a href="#"><i class="fas fa-book-open"></i> Programs</a>
+                    <a href="#"><i class="fas fa-graduation-cap"></i> Scholarships</a>
+                    <a href="#"><i class="fas fa-phone"></i> Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find Funded Graduate Programs Worldwide</h1>
+                <p>Discover masters, PhD, and post-doc opportunities with funding for international students</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>5,000+</h3>
+                        <p>Programs</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Countries</p>
+                    </div>
+                    <div class="stat">
+                        <h3>$2.5B+</h3>
+                        <p>Funding Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Search Section -->
+            <section class="search-section">
+                <div class="section-header">
+                    <h2>Find Your Perfect Program</h2>
+                    <p>Powered by Suntrenia's AI technology</p>
+                </div>
+
+                <div class="mode-toggle">
+                    <button id="modeToggle" class="toggle-btn">
+                        <i class="fas fa-robot"></i> Switch to Advanced Mode (AI-Powered)
+                    </button>
+                </div>
+
+                <form id="searchForm" class="search-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="country"><i class="fas fa-globe"></i> Country</label>
+                            <select id="country" name="country" required>
+                                <option value="">Select Country</option>
+                                <option value="USA">United States</option>
+                                <option value="Canada">Canada</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Netherlands">Netherlands</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Norway">Norway</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="France">France</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="course"><i class="fas fa-book"></i> Course/Field</label>
+                            <input type="text" id="course" name="course" placeholder="e.g., Computer Science" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="level"><i class="fas fa-graduation-cap"></i> Level of Study</label>
+                            <select id="level" name="level" required>
+                                <option value="">Select Level</option>
+                                <option value="Masters">Masters</option>
+                                <option value="PhD">PhD</option>
+                                <option value="Post-Doc">Post-Doctorate</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="session"><i class="fas fa-calendar"></i> Academic Session</label>
+                            <select id="session" name="session" required>
+                                <option value="">Select Session</option>
+                                <option value="Fall 2024">Fall 2024</option>
+                                <option value="Spring 2025">Spring 2025</option>
+                                <option value="Fall 2025">Fall 2025</option>
+                                <option value="Spring 2026">Spring 2026</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="advancedOptions" class="advanced-options">
+                        <h3><i class="fas fa-robot"></i> AI-Enhanced Search Options</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="minFunding">Minimum Funding Amount</label>
+                                <input type="text" id="minFunding" name="minFunding" placeholder="e.g., $15,000">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="preferredFunding">Preferred Funding Type</label>
+                                <select id="preferredFunding" name="preferredFunding">
+                                    <option value="">Any Type</option>
+                                    <option value="Teaching Assistantship">Teaching Assistantship</option>
+                                    <option value="Research Assistantship">Research Assistantship</option>
+                                    <option value="Graduate Assistantship">Graduate Assistantship</option>
+                                    <option value="Merit Scholarship">Merit Scholarship</option>
+                                    <option value="Need-based Bursary">Need-based Bursary</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="specialRequirements">Special Requirements</label>
+                                <input type="text" id="specialRequirements" name="specialRequirements" placeholder="e.g., no GRE required">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="search-btn">
+                        <i class="fas fa-search"></i> Search Programs
+                    </button>
+                </form>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section">
+                <div id="loading" class="loading">
+                    <div class="spinner"></div>
+                    <p>Searching thousands of programs... This may take a moment</p>
+                </div>
+
+                <div id="results" class="results"></div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Application Modal -->
+    <div id="applicationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Apply Now</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="applicationDetails"></div>
+                <form id="applicationForm">
+                    <div class="form-group">
+                        <label for="applicantName"><i class="fas fa-user"></i> Full Name</label>
+                        <input type="text" id="applicantName" name="applicantName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="applicantEmail"><i class="fas fa-envelope"></i> Email Address</label>
+                        <input type="email" id="applicantEmail" name="applicantEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="applicantPhone"><i class="fas fa-phone"></i> Phone Number</label>
+                        <input type="tel" id="applicantPhone" name="applicantPhone">
+                    </div>
+                    <div class="payment-summary">
+                        <h3>Payment Summary</h3>
+                        <div class="payment-line">
+                            <span>Application Fee:</span>
+                            <span>$<span id="applicationFee">0.00</span> USD</span>
+                        </div>
+                        <div class="payment-total">
+                            <span>Total:</span>
+                            <span>$<span id="totalAmount">0.00</span> USD</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="payment-btn">
+                        <i class="fas fa-lock"></i> Process Application (Free)
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Application Submitted!</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="confirmation-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Thank you for your application!</h3>
+                <p>Your application has been successfully submitted. You will receive a confirmation email shortly.</p>
+                <div class="application-details">
+                    <p><strong>Application ID:</strong> <span id="applicationId"></span></p>
+                    <p><strong>Program:</strong> <span id="confirmedProgram"></span></p>
+                    <p><strong>University:</strong> <span id="confirmedUniversity"></span></p>
+                </div>
+                <button class="btn-primary" id="closeConfirmation">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">🎓</div>
+                        <div>
+                            <h3>ScholarBridge</h3>
+                            <p>by Suntrenia</p>
+                        </div>
+                    </div>
+                    <p>Empowering students to find funded graduate programs worldwide through advanced AI technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@suntrenia.com</p>
+                    <p><i class="fas fa-phone"></i> 07034995589</p>
+                    <p><i class="fab fa-x-twitter"></i> @suntreniTech</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">How It Works</a>
+                    <a href="#">Success Stories</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#">Application Guide</a>
+                    <a href="#">Visa Assistance</a>
+                    <a href="#">Scholarship Tips</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Suntrenia Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
