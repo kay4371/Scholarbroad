@@ -3151,7 +3151,7 @@ const CACHE_DURATION = 1000 * 60 * 30; // 30 minutes
 // Company information
 const COMPANY_INFO = {
   name: "Suntrenia",
-  appName: "ScholarBridge",
+  appName: "ScholarBroad",
   email: "info@suntrenia.com",
   xHandle: "suntreniTech",
   phone: "07034995589",
